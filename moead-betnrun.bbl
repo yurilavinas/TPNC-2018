@@ -1,0 +1,50 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{bezerra2015comparing}
+Bezerra, L.C., L{\'o}pez-Ib{\'a}{\~n}ez, M., St{\"u}tzle, T.: Comparing
+  decomposition-based and automatically component-wise designed multi-objective
+  evolutionary algorithms. In: International Conference on Evolutionary
+  Multi-Criterion Optimization. pp. 396--410. Springer (2015)
+
+\bibitem{chugh2017handling}
+Chugh, T.: Handling expensive multiobjective optimization problems with
+  evolutionary algorithms. Jyv{\"a}skyl{\"a} studies in computing 263.  (2017)
+
+\bibitem{coello2007evolutionary}
+Coello, C.A.C., Lamont, G.B., Van~Veldhuizen, D.A., et~al.: Evolutionary
+  algorithms for solving multi-objective problems, vol.~5. Springer (2007)
+
+\bibitem{friedrich2017generic}
+Friedrich, T., K{\"o}tzing, T., Wagner, M.: A generic bet-and-run strategy for
+  speeding up stochastic local search. In: AAAI. pp. 801--807 (2017)
+
+\bibitem{gomes2000heavy}
+Gomes, C.P., Selman, B., Crato, N., Kautz, H.: Heavy-tailed phenomena in
+  satisfiability and constraint satisfaction problems. Journal of automated
+  reasoning  \textbf{24}(1-2),  67--100 (2000)
+
+\bibitem{ishibuchi2009adaptation}
+Ishibuchi, H., Sakane, Y., Tsukamoto, N., Nojima, Y.: Adaptation of scalarizing
+  functions in moea/d: An adaptive scalarizing function-based multiobjective
+  evolutionary algorithm. In: International Conference on Evolutionary
+  Multi-Criterion Optimization. pp. 438--452. Springer (2009)
+
+\bibitem{lissovoi2017theoretical}
+Lissovoi, A., Sudholt, D., Wagner, M., Zarges, C.: Theoretical results on
+  bet-and-run as an initialisation strategy. In: Proceedings of the Genetic and
+  Evolutionary Computation Conference. pp. 857--864. ACM (2017)
+
+\bibitem{zhang2009performance}
+Zhang, Q., Liu, W., Li, H.: The performance of a new version of moea/d on cec09
+  unconstrained mop test instances. In: Evolutionary Computation, 2009. CEC'09.
+  IEEE Congress on. pp. 203--208. IEEE (2009)
+
+\bibitem{zhou2016all}
+Zhou, A., Zhang, Q.: Are all the subproblems equally important? resource
+  allocation in decomposition-based multiobjective evolutionary algorithms.
+  IEEE Transactions on Evolutionary Computation  \textbf{20}(1),  52--64 (2016)
+
+\end{thebibliography}

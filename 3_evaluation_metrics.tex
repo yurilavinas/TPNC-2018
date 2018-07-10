@@ -1,0 +1,48 @@
+\section{Evaluation Metrics}
+
+Evaluation Metrics
+
+Unary Indicators
+
+- Measure Pareto Sets independently.
+- Power is restricted.
+- Cannot tell in general if a set is better than another.
+- Focus on problem dependent and specifics.
+- Assumptions and knowledge should be specified.
+1. Hyper-volume.
+2. Error ratio.
+3. Distance from reference set.
+
+Binary Indicators
+
+- Theoretically have no limitations.
+- Analysis and presentation of results more difficult.
+
+1. R1, R2, R3 indicators.
+2. $\varepsilon$-Indicator.
+3. Binary Hyper-volume.
+
+Hypervolume
+Considerations
+
+- Is complete - If, and only if $HV(A) > HV(B) \implies A$ is not worse than $B$.
+- Is weakly compatible - $HV(A) > HV(B) \implies \not B$ dominates $A$.
+- Assumptions - All points of a Pareto Set under consideration dominate the reference point.
+- @ishibuchi2018specify proposed a method to specify the reference point from a viewpoint of fair performance comparison.
+
+ Considerations
+- A large population size is **always** more beneficial than a small one.
+- Measures both the convergence toward the Pareto Front and the diversity of non-dominated solutions.
+- A monotonic increase of the hyper-volume over time cannot always be ensured.
+- For MOEA/D that is always true.
+
+$\varepsilon$-Indicator
+Considerations
+- It compares 2 Pareto Sets.
+- It indicates which set is better and how much better
+- If A is better than B $\implies I_{\varepsilon}(B,A) > 0$.
+- If $I_{\varepsilon}(A,B) \leq 0$ and $I_{\varepsilon}(B,A) > 0 \implies A$ is better than $B$.
+
+The benchmark used are the DTLZ and the ZDT group of functions.
+
+DTLZ are easy~\cite{bezerra2015comparing}.

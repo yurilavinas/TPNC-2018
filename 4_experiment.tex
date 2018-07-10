@@ -1,0 +1,34 @@
+\section{Experiment Design}
+
+4. maxiter 300.
+5. Based on the common variation: MOEA/D (variations 1 and 2 from MOEADr) and MOEA/D-DE.
+
+
+Overview of the experiments
+
+DTLZ[1-7] MOP benchmark- Available from the MOEADr package. both 3 and 2 objectives.
+ZDT[1-6] MOP benchmark- Available from the MOEADr package, only for 2 objectives.
+
+Number of evaluations: 50000 or 100000 for 4 objectives
+Compared with their HV - normalized between 0 and 1 (based on the fair comparison paper).
+30 repetitions.
+box-plots 
+Kruskal-Wallis (data non-normal data, used in the literature)
+
+Configurations and Parameters
+
+Control - Based on the common variation: MOEA/D (variation1) and MOEA/D-DE as in preset\_moead
+Control and ONRA - parameters: dt = 20
+Ben-and-run
+Ben-and-run and ONRA - parameters: dt = 20
+
+Dt - interval that control the resources allocation. From the proposal paper, there is no much sensibility.
+Decomposition method used - SLD, with H being 199 for 2D and 19 for 3D 
+number of dimensions - 60 
+All other parameters are defined by  preset\_moead
+
+Bet-and-run
+
+Phase 1 of the bet-and-run strategy is using the epsilon indicator. 40 instances.
+It needs two Pareto sets. The first is the Pareto set of a bet instance while the other is the Pareto set from the control algorithm executed with 1\% of the number of interactions. 
+Phase 2 uses the 60\% rest of max interactions.
