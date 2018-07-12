@@ -1,61 +1,29 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}\label{intro}
 
-Multiobjective Optimization Problem have $m$ multiple objective functions that must be optimized simultaneously.
+A Multiobjective Optimization Problem (MOP)  are box-constrained problems that have $m$ multiple objective functions that must be optimized simultaneously:
 
-Maximize$^1$ $F(x) = (f_1(x), f_2(x), ..., f_m(x))$,
+\begin{align}\label{min_problem}
+min f(x) = (f_1(x), f_2(x), ..., f_{n_f}(x)), \text{ subject to $x$ in $\Omega$},
+\end{align}
 
-subject to $x$ in $\Omega$.
+where ${n_f}$ is the number of objective functions, $x \in \mathbb{R}^{n_v}$, the decision vector, represents a candidate solution with ${n_v}$ variables, $f: \mathbb{R}^{n_v} \rightarrow \mathbb{R}^{n_v}$ is a vector of objective functions and $\Omega$ is the feasible decision space, such that:
 
-- $F(x)$ objective functions;
-- $f_i$ is the i-th objective to be maximized;
-- $x$ is the decision vector;
-- $\Omega$ is the decision space.
+\begin{align}
+	\Omega =\{x \text{ in } \mathbb{R}^{n_v} | g_i(x) \leq 0 \text{ } \forall_i \text{ and } h_i(x) = 0 \text{ } \forall_j \},
+\end{align}
 
-\footnotesize $^1$ All definitions are for maximization. Following inequalities should be reversed if the goal is to minimize.
-
- Many real-world scientific and engineering are MOP.
- Water quality control, Groundwater pollution re-mediation, Design of marine vehicles~\cite{coello2007evolutionary}.
- Petrol extraction.
- Hard problems: to balance the interests of the multi-objective as a whole is hard. 
+Objectives often conflict with each other, therefore, no point in $\Omega$ minimizes all the objectives at the same time. Consequently, the goal of MOP solvers is to find the best trade-off that balances the different objectives in an optimal way.
 
 
+Given two feasible solutions $u, v$ in $\Omega$, $u$  Pareto-dominates $v$, denoted by $f(y) \succ f(v)$, if and only if $f_k(u) \leq f_k(v), \forall_k \in \{1,..., n_f\}$ and $ f(u) \neq f(x)$. A solution $x^* \in \Omega$ is considered Poreto-Optimal if there exists no other solution $y \in \Omega$ such that $f(y) \succ f(x^*)$, i.e., if $x^*$ is nondominated in the feasible decision space. A point is called nondominated if no other point dominates it. That is, no single solution provides a better trade-off in all objectives.
 
-Objectives may be conflicting
-- The goal is to find good trade-off.
+The set of all Pareto-optimal solutions is known as the Pareto-Optimal set (PS), while the image of this set is referred to as the Pareto-optimal front (PF).\\
 
-- Set of solutions.
+\begin{equation}
+	PS = {x^* \in \Omega | \nexists y \in \Omega : f(y) \succ f(x^*)  },
+\end{equation}
 
-Set of *optimum solutions* - Pareto set.
-
-- Non-dominated solutions: no single solution provides a better trade-off in all objectives.
-
-\begin{figure*}[!t]
-\centering
-\includegraphics[width=\textwidth]{images/pareto_front_diff_scalarizins_f.png}
-\caption{Pareto Set - \cite{ishibuchi2009adaptation} }.
-\end{figure*}
-
-
-1Let $u = (u_1, ..., u_m)$ and $v = (v_1, ..., v_m)$ vectors in $\Omega$ (the decision space).
-- $\forall i:u$ dominates $v$ if $f_i(u) \leq f_i(v)$ and $\exists j:f_j(u) < f_j(v)$.
-- u dominates v, v is dominated by u, u is better that v.
-
- A point $x^*$ in $\Omega$  is called *Pareto Optimal* if no other point dominates $x^*$. 
-
-
-%TODO: This needs to be changed
-\begin{figure*}[!t]
-\centering
-```{r fig.width=3, fig.height=15,echo=FALSE}
-\includegraphics[width=\textwidth]{images/pareto_dominated.png}
-%\caption{Pareto Front - From: http://www.cenaero.be/Page.asp?docid=27103&langue=EN}
-\end{figure*}
-
-The set of all Pareto Optimal is called the Pareto Set. 
-
-$P^\ast$ = $\{x \in \Omega: \nexists$ y $\in \Omega$ and $F(y) \leq F(x)\}$
-
- Pareto Front is the image of the Pareto Set in the objective space.
- PF = {$F(x) = (f_i(x), ..., f_m(x)): x \in P^*$}
-
+\begin{equation}
+	PF = {f(x^*) | x^* \in PS }.
+\end{equation}

@@ -1,0 +1,24 @@
+\section{MOEA/D and Bet-and-Run}
+
+In this work, we propose to integrate both frameworks, the MOEA/D the Bet-and-Run.  First, the implementation of MOEA/D is discussed. Then the implementation of the Bet-and-Run followed by the discussion of how to integratate them.
+
+\subsection{MOEA/D}
+
+In this paper, two different MOEA/D combinations found in the literature  were studied. These combinations are the original MOEA/D~\cite{zhang2007moea} and MOEA/D-DE~\cite{li2009multiobjective}. 
+
+The first modification was to change the parameter control $H$ of the simplex-lattice design (SLD) that is used to generate the weight vectors W. For the 2-objective problem benchmark functions it was set as \textit{199}, while for the 3-objective problem benchmark functions, \textit{19}. Those vales for the $H$ parameter were chosen so that the number of sub-problems and the size of incumbent solutions are equal to \textit{200}, following default settings as in the recent work from Tanabe et. al~\cite{tanabe2018analysis}. Na verdade eles usam varios tamanhos de populacao, e percebem que menor e melhor no inicio e pior no fim. The other modification was to use an archive, that stores all nondominated solutions found during the search process.(????????). 
+
+We also studied the integration of On-line Resource Allocation (ONRA), proposed in the context of MOEA/D by \cite{zhou2016all}. The resource distribution when using ONRA is allocated using an adaptative strategy aiming to adjust the behaviour of an algorithm in on-line manner to suit the problem in question. Although, other strategies were proposed in the work of Zhou, ONRA was the one that perfomed better among all strategies proposed. The ONRA strategy is concerned with the distribution of resources in an execution of MOEA/D. Different amounts of resources are considered to different sub-problems, following the assumption that some sub-problems can be more difficult to approximate that others. 
+
+\subsection{Bet-and-Run}
+
+In this work, the Bet-and-run framework implemented follows the results found  by Friedrich et. al~\cite{friedrich2017generic}. They studied different combinations strategies that are diverse on the amount of resources assigned for phase 1 and 2. 
+
+The best overall strategy found is the one that uses 40\% of the total budget available on short runs (phase1) and then run the most prominient one (phase 2) with the remaining 60\% of the budget found. One adjusment was made to better fit the context of MOP and MOEA/D which is defining the budget as the number of interactions, instead of using time as the budget as Friedrich et. al used.
+
+%Phase 1 of the bet-and-run strategy is using the epsilon indicator. 40 instances.
+%It needs two Pareto sets. The first is the Pareto set of a bet instance while the other is the Pareto set from the control algorithm executed with 1% of the number of interactions. 
+%Phase 2 uses the 60% rest of max interactions.
+
+
+%

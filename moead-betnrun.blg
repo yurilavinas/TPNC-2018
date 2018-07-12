@@ -3,44 +3,50 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: moead-betnrun.aux
 The style file: splncs04.bst
 Database file #1: bib.bib
-You've used 9 entries,
+Repeated entry---line 310 of file bib.bib
+ : @inproceedings{friedrich2017generic
+ :                                    ,
+I'm skipping whatever remains of this entry
+Warning--can't use both volume and number fields in yu2018simulated
+You've used 15 entries,
             2850 wiz_defined-function locations,
-            648 strings with 6420 characters,
-and the built_in function-call counts, 5494 in all, are:
-= -- 475
-> -- 158
-< -- 10
-+ -- 67
-- -- 56
-* -- 333
-:= -- 692
-add.period$ -- 18
-call.type$ -- 9
-change.case$ -- 63
+            695 strings with 7574 characters,
+and the built_in function-call counts, 9535 in all, are:
+= -- 836
+> -- 255
+< -- 22
++ -- 108
+- -- 90
+* -- 589
+:= -- 1166
+add.period$ -- 27
+call.type$ -- 15
+change.case$ -- 104
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 480
-empty$ -- 504
-format.name$ -- 64
-if$ -- 1225
+cite$ -- 16
+duplicate$ -- 846
+empty$ -- 856
+format.name$ -- 104
+if$ -- 2133
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 93
-newline$ -- 33
-num.names$ -- 18
-pop$ -- 182
+int.to.str$ -- 15
+missing$ -- 158
+newline$ -- 51
+num.names$ -- 30
+pop$ -- 291
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 75
 quote$ -- 0
-skip$ -- 160
+skip$ -- 299
 stack$ -- 0
-substring$ -- 330
-swap$ -- 260
-text.length$ -- 10
+substring$ -- 605
+swap$ -- 497
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 34
-warning$ -- 0
-while$ -- 48
-width$ -- 10
-write$ -- 98
+type$ -- 60
+warning$ -- 1
+while$ -- 85
+width$ -- 17
+write$ -- 161
+(There was 1 error message)

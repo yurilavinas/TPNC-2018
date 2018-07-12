@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 \providecommand{\doi}[1]{https://doi.org/#1}
@@ -13,9 +13,14 @@ Bezerra, L.C., L{\'o}pez-Ib{\'a}{\~n}ez, M., St{\"u}tzle, T.: Comparing
 Chugh, T.: Handling expensive multiobjective optimization problems with
   evolutionary algorithms. Jyv{\"a}skyl{\"a} studies in computing 263.  (2017)
 
-\bibitem{coello2007evolutionary}
-Coello, C.A.C., Lamont, G.B., Van~Veldhuizen, D.A., et~al.: Evolutionary
-  algorithms for solving multi-objective problems, vol.~5. Springer (2007)
+\bibitem{deb2005scalable}
+Deb, K., Thiele, L., Laumanns, M., Zitzler, E.: Scalable test problems for
+  evolutionary multiobjective optimization. In: Evolutionary multiobjective
+  optimization, pp. 105--145. Springer (2005)
+
+\bibitem{fischetti2014exploiting}
+Fischetti, M., Monaci, M.: Exploiting erraticism in search. Operations Research
+   \textbf{62}(1),  114--122 (2014)
 
 \bibitem{friedrich2017generic}
 Friedrich, T., K{\"o}tzing, T., Wagner, M.: A generic bet-and-run strategy for
@@ -26,25 +31,51 @@ Gomes, C.P., Selman, B., Crato, N., Kautz, H.: Heavy-tailed phenomena in
   satisfiability and constraint satisfaction problems. Journal of automated
   reasoning  \textbf{24}(1-2),  67--100 (2000)
 
-\bibitem{ishibuchi2009adaptation}
-Ishibuchi, H., Sakane, Y., Tsukamoto, N., Nojima, Y.: Adaptation of scalarizing
-  functions in moea/d: An adaptive scalarizing function-based multiobjective
-  evolutionary algorithm. In: International Conference on Evolutionary
-  Multi-Criterion Optimization. pp. 438--452. Springer (2009)
+\bibitem{kanahara2018restart}
+Kanahara, K., Katayama, K., Okano, T., Kulla, E., Oda, T., Nishihara, N.: A
+  restart diversification strategy for iterated local search to maximum clique
+  problem. In: Conference on Complex, Intelligent, and Software Intensive
+  Systems. pp. 670--680. Springer (2018)
+
+\bibitem{li2009multiobjective}
+Li, H., Zhang, Q.: Multiobjective optimization problems with complicated pareto
+  sets, moea/d and nsga-ii. IEEE Transactions on evolutionary computation
+  \textbf{13}(2),  284--302 (2009)
 
 \bibitem{lissovoi2017theoretical}
 Lissovoi, A., Sudholt, D., Wagner, M., Zarges, C.: Theoretical results on
   bet-and-run as an initialisation strategy. In: Proceedings of the Genetic and
   Evolutionary Computation Conference. pp. 857--864. ACM (2017)
 
-\bibitem{zhang2009performance}
-Zhang, Q., Liu, W., Li, H.: The performance of a new version of moea/d on cec09
-  unconstrained mop test instances. In: Evolutionary Computation, 2009. CEC'09.
-  IEEE Congress on. pp. 203--208. IEEE (2009)
+\bibitem{tanabe2018analysis}
+Tanabe, R., Ishibuchi, H.: An analysis of control parameters of moea/d under
+  two different optimization scenarios. Applied Soft Computing  \textbf{70},
+  22--40 (2018)
+
+\bibitem{yu2018simulated}
+Yu, V., Iswari, T., Normasari, N., Asih, A., Ting, H.: Simulated annealing with
+  restart strategy for the blood pickup routing problem. In: IOP Conference
+  Series: Materials Science and Engineering. vol.~337, p. 012007. IOP
+  Publishing (2018)
+
+\bibitem{zhang2007moea}
+Zhang, Q., Li, H.: Moea/d: A multiobjective evolutionary algorithm based on
+  decomposition. IEEE Transactions on evolutionary computation  \textbf{11}(6),
+   712--731 (2007)
 
 \bibitem{zhou2016all}
 Zhou, A., Zhang, Q.: Are all the subproblems equally important? resource
   allocation in decomposition-based multiobjective evolutionary algorithms.
   IEEE Transactions on Evolutionary Computation  \textbf{20}(1),  52--64 (2016)
+
+\bibitem{zitzler2000comparison}
+Zitzler, E., Deb, K., Thiele, L.: Comparison of multiobjective evolutionary
+  algorithms: Empirical results. Evolutionary computation  \textbf{8}(2),
+  173--195 (2000)
+
+\bibitem{zitzler1998multiobjective}
+Zitzler, E., Thiele, L.: Multiobjective optimization using evolutionary
+  algorithms—a comparative case study. In: International conference on
+  parallel problem solving from nature. pp. 292--301. Springer (1998)
 
 \end{thebibliography}

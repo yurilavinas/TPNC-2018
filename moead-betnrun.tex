@@ -7,6 +7,8 @@
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{amsmath}
+
+\usepackage[ruled]{algorithm2e}
 % Used for displaying a sample figure. If possible, figure files should
 % be included in EPS format.
 %
@@ -16,7 +18,7 @@
 
 \begin{document}
 %
-\title{Contribution Title\thanks{Supported by organization x.}}
+\title{Bet-and-Run Strategy and MOEA/D \\ An Alternative Resource Management}
 %
 %\titlerunning{Abbreviated paper title}
 % If the paper title is too long for the running head, you can set
@@ -40,17 +42,21 @@ ABC Institute, Rupert-Karls-University Heidelberg, Heidelberg, Germany\\
 \maketitle              % typeset the header of the contribution
 %
 \begin{abstract}
-bet-and-run and moea/d
+Bet-and-run strategies have been shown, both experimentally and theoretically, to be beneficial on single objective problems. Given this success and the fact that they do not take any problem knowledge into account and are not tailored to the optimization algorithms, we propose to integrate a bet-and-run strategy into the Multiobjective Evolutionary Algorithm based on Decomposition framework, (MOEA/D). 
+
+MOEA/D represent a class of population-based metaheuristics for the solution of multicriteria optimizarion problems. It decomposes a multiobjective optimization problem into a set of scalar objective subproblems and solve this set in a collaborative way. 
+
 \end{abstract}
 %
 %
 %
 \input{1_intro.tex}
 \input{2_moead.tex} 
-\input{3_evaluation_metrics.tex}% arrumar o where...
-\input{4_experiment.tex}
-\input{5_results.tex}
-\input{6_conclusion.tex}
+\input{3_betnrun.tex}% arrumar o where...
+\input{4_moeadbetnrun.tex}
+\input{5_experiment.tex}
+\input{6_results.tex}
+\input{7_conclusion.tex}
 
 \bibliographystyle{splncs04}
 \bibliography{bib} 
