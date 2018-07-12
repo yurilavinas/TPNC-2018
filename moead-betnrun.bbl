@@ -3,11 +3,10 @@
 \providecommand{\urlprefix}{URL }
 \providecommand{\doi}[1]{https://doi.org/#1}
 
-\bibitem{bezerra2015comparing}
-Bezerra, L.C., L{\'o}pez-Ib{\'a}{\~n}ez, M., St{\"u}tzle, T.: Comparing
-  decomposition-based and automatically component-wise designed multi-objective
-  evolutionary algorithms. In: International Conference on Evolutionary
-  Multi-Criterion Optimization. pp. 396--410. Springer (2015)
+\bibitem{brockhoff2015benchmarking}
+Brockhoff, D., Tran, T.D., Hansen, N.: Benchmarking numerical multiobjective
+  optimizers revisited. In: Proceedings of the 2015 Annual Conference on
+  Genetic and Evolutionary Computation. pp. 639--646. ACM (2015)
 
 \bibitem{chugh2017handling}
 Chugh, T.: Handling expensive multiobjective optimization problems with
@@ -30,6 +29,11 @@ Friedrich, T., K{\"o}tzing, T., Wagner, M.: A generic bet-and-run strategy for
 Gomes, C.P., Selman, B., Crato, N., Kautz, H.: Heavy-tailed phenomena in
   satisfiability and constraint satisfaction problems. Journal of automated
   reasoning  \textbf{24}(1-2),  67--100 (2000)
+
+\bibitem{ishibuchi2018specify}
+Ishibuchi, H., Imada, R., Setoguchi, Y., Nojima, Y.: How to specify a reference
+  point in hypervolume calculation for fair performance comparison.
+  Evolutionary computation pp. 1--29 (2018)
 
 \bibitem{kanahara2018restart}
 Kanahara, K., Katayama, K., Okano, T., Kulla, E., Oda, T., Nishihara, N.: A

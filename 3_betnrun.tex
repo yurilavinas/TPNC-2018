@@ -2,18 +2,18 @@
 \section{Bet-and-Run}\label{intro}
 
 \subsection{Restart Strategy}
-Restart Strategies are a mechanism helps the algorithm to explore more in the solution area~\cite{yu2018simulated}. For instance, stochastic algorithms and randomized search heuristics may encouter some stagnation before finding a high quality solution. One way to overcome  such stagnation is to introduce a restart strategy, since it forcibly changes the search points by restoring the algorithm to its beginning~\cite{kanahara2018restart}. Also, Restart Strategy might be used to avoid heavy-tailed running time distributions \cite{gomes2000heavy}, because if a execution of an algorithm does not conclude within a pre-determined limit or if the solution quality is unsatisfactory, the algorithm is restarted~\cite{lissovoi2017theoretical}. Finally, it may be considered as an additional speed-up \cite{friedrich2017generic}.
+Restart Strategies are a mechanism helps the algorithm to explore more in the solution area~\cite{yu2018simulated}. For instance, stochastic algorithms and randomized search heuristics may encounter some stagnation before finding a high quality solution. One way to overcome  such stagnation is to introduce a restart strategy, since it forcibly changes the search points by restoring the algorithm to its beginning~\cite{kanahara2018restart}. Also, Restart Strategy might be used to avoid heavy-tailed running time distributions \cite{gomes2000heavy}, because if a execution of an algorithm does not conclude within a pre determined limit or if the solution quality is unsatisfactory, the algorithm is restarted~\cite{lissovoi2017theoretical}. Finally, it may be considered as an additional speed-up \cite{friedrich2017generic}.
 
 \subsection{Bet-and-Run framework}
 
 
-ischetti and Monaci~\cite{fischetti2014exploiting} investigated the Bet-and-Run framework. They defined it as a number of short runs with randomized initial conditions (the bet-phase) and then bet on the most promising run(the bet-phase) and bring it to completion. In their work, they studied the following Bet-and-Run framework:\\
+Fischetti and Monaci~\cite{fischetti2014exploiting} investigated the Bet-and-Run framework. They defined it as a number of short runs with randomized initial conditions (the bet-phase) and then bet on the most promising run(the bet-phase) and bring it to completion. In their work, they studied the following Bet-and-Run framework:\\
 
 
 \indent \textbf{Phase 1} performs \textit{k} runs of the algorithm for some short time limit \textit{$t_1$} with $t_1 \leq t/k$.\\
 \indent \textbf{Phase 2} uses remaining time $t_2 = t - k*t_1$ to continue \textit{only the best run} from the first phase until time out. \\
 
-In 2017, Lissovoi and Sudholt~\cite{lissovoi2017theoretical} analysed this framework theoretically. They investigate it in the context of single objective problems and found that new initialisations can have a small beneficial effect even on very easy functions, that this restart strategy might be an effective countermeasure when problems with promising and deceptive regions are encountered.
+In 2017, Lissovoi and Sudholt~\cite{lissovoi2017theoretical} analyzed this framework theoretically. They investigate it in the context of single objective problems and found that new initializations can have a small beneficial effect even on very easy functions, that this restart strategy might be an effective countermeasure when problems with promising and deceptive regions are encountered.
 
 
 To the best of our knowledge, the Bet-and-Run framework was only applied with evolutionary algorithms in the context of single objective problems. 

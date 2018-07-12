@@ -16,7 +16,7 @@ where ${n_f}$ is the number of objective functions, $x \in \mathbb{R}^{n_v}$, th
 Objectives often conflict with each other, therefore, no point in $\Omega$ minimizes all the objectives at the same time. Consequently, the goal of MOP solvers is to find the best trade-off that balances the different objectives in an optimal way.
 
 
-Given two feasible solutions $u, v$ in $\Omega$, $u$  Pareto-dominates $v$, denoted by $f(y) \succ f(v)$, if and only if $f_k(u) \leq f_k(v), \forall_k \in \{1,..., n_f\}$ and $ f(u) \neq f(x)$. A solution $x^* \in \Omega$ is considered Poreto-Optimal if there exists no other solution $y \in \Omega$ such that $f(y) \succ f(x^*)$, i.e., if $x^*$ is nondominated in the feasible decision space. A point is called nondominated if no other point dominates it. That is, no single solution provides a better trade-off in all objectives.
+Given two feasible solutions $u, v$ in $\Omega$, $u$  Pareto-dominates $v$, denoted by $f(y) \succ f(v)$, if and only if $f_k(u) \leq f_k(v), \forall_k \in \{1,..., n_f\}$ and $ f(u) \neq f(x)$. A solution $x^* \in \Omega$ is considered Pareto-Optimal if there exists no other solution $y \in \Omega$ such that $f(y) \succ f(x^*)$, i.e., if $x^*$ is non-dominated in the feasible decision space. A point is called non-dominated if no other point dominates it. That is, no single solution provides a better trade-off in all objectives.
 
 The set of all Pareto-optimal solutions is known as the Pareto-Optimal set (PS), while the image of this set is referred to as the Pareto-optimal front (PF).\\
 
