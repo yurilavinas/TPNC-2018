@@ -8,9 +8,11 @@ In this work, the integrate of both frameworks, the MOEA/D the Bet-and-Run, is a
 
 In this paper, two different MOEA/D combinations found in the literature  were studied. These combinations are the original MOEA/D~\cite{zhang2007moea} and MOEA/D-DE~\cite{li2009multiobjective}. 
 
-The first modification was to change the parameter control $H$ of the simplex-lattice design (SLD) that is used to generate the weight vectors W. For the 2-objective problem benchmark functions it was set as \textit{199}, while for the 3-objective problem benchmark functions, \textit{19}. Those vales for the $H$ parameter were chosen so that the number of sub-problems and the size of incumbent solutions are equal to \textit{200}, following default settings as in the works of Brockhoff et. al~\cite{brockhoff2015benchmarking} and Tanabe et. al~\cite{tanabe2018analysis}. The other modification was to use an archive, that stores all non-dominated solutions found during the search process.(????????). 
+The first modification was to change the parameter control $H$ of the simplex-lattice design (SLD) that is used to generate the weight vectors W. For the 2-objective problem benchmark functions it was set as \textit{199}, while for the 3-objective problem benchmark functions, \textit{19}. Those vales for the $H$ parameter were chosen so that the number of sub-problems and the size of incumbent solutions are equal to \textit{200}, following default settings as in the works of Brockhoff et. al~\cite{brockhoff2015benchmarking} and Tanabe et. al~\cite{tanabe2018analysis}. The other modification was to use an external solution archive, that stores the best solutions found during the search process.
 
-Here, the integration of On-line Resource Allocation (ONRA), proposed in the context of MOEA/D by \cite{zhou2016all} was also considered. The resource distribution when using ONRA is allocated using an adaptive strategy aiming to adjust the behavior of an algorithm in on-line manner to suit the problem in question. Although, other strategies were proposed in the work of Zhou, ONRA was the one that perfomed better among all strategies proposed. The ONRA strategy is concerned with the distribution of resources in an execution of MOEA/D. Different amounts of resources are considered to different sub-problems, following the assumption that some sub-problems can be more difficult to approximate that others. 
+
+
+Here, the integration of On-line Resource Allocation (ONRA), proposed in the context of MOEA/D by~\cite{zhou2016all} was also considered. The resource distribution when using ONRA is allocated using an adaptive strategy aiming to adjust the behavior of an algorithm in on-line manner to suit the problem in question. Although, other strategies were proposed in the work of Zhou, ONRA was the one that perfomed better among all strategies proposed. The ONRA strategy is concerned with the distribution of resources in an execution of MOEA/D. Different amounts of resources are considered to different sub-problems, following the assumption that some sub-problems can be more difficult to approximate that others.
 
 \subsubsection{Bet-and-Run}
 
@@ -18,17 +20,17 @@ In this work, the Bet-and-run framework implemented follows the results found  b
 
 The best overall strategy found is the one that uses 40\% of the total budget available on short runs (phase 1) and then run the most prominent one (phase 2) with the remaining 60\% of the budget found. One adjustment was made to better fit the context of MOP and MOEA/D which is defining the budget as the number of interactions, instead of using time as the budget as Friedrich et. al used.
 
-%Phase 1 of the bet-and-run strategy is using the epsilon indicator. 40 instances.
-%It needs two Pareto sets. The first is the Pareto set of a bet instance while the other is the Pareto set from the control algorithm executed with 1% of the number of interactions. 
-%Phase 2 uses the 60% rest of max interactions.
+The $\epsilon$-indicator\cite{zitzler2003performance} was used to evaluate the quality the bet-instances and to choose among them, the most prominent one. It is a binary indicator that compares 2 Pareto Fronts and may indicate which Front is better and by how much. The first Pareto Front used is the one from the bet-instances while the second is the \textit{control} Pareto Front. This second Pareto Front is called control since its only purpose is to define a fair reference front for every bet. 
 
+For this experiments, the control Pareto Front is generate every time the Bet-and-Run+MOEA/D is run. It is based on the same algorithm configuration as the Bet-and-Run+MOEA/D and is executed for only one interaction. After all bet-instances are evaluated, the one with the lowest value is chosen as the most prominent  one.
 
-%
+\subsubsection{ONRA}
+The only extra parameter added by ONRA is the, $DT$. Here, it is set to $20$, in accord to the findings in~\cite{zhou2016all}. 
+
 
 \subsection{Experimental Setting}
 
-
-The DTLZ~\cite{deb2005scalable} and the ZDT~\cite{zitzler2000comparison},test problems were used in the analysis. For the first the number of objectives used was two three. According to~\cite{deb2005scalable}, for the DTLZ problems, the number of position variables D was set to $k = 5$ for the DTLZ1 problem, $k = 7$ for the DTLZ2 problem and $k = 10$ for the other DTLZ problems, where the number of variables $D = n_f + k -1$. For the ZDT the number of variable $D = 11$.
+The DTLZ~\cite{deb2005scalable} and the WFG~\cite{huband2006review},test problems were used to perform the analysis. For the first the number of objectives used was two and three objectives. According to~\cite{deb2005scalable}, for the DTLZ problems, the number of position variables $k$ was set to $k = 5$ for the DTLZ1 problem, $k = 7$ for the DTLZ2 problem and $k = 10$ for the other DTLZ problems, where the number of variables $D = n_f + k -1$. While for the WFG problems the number of position variables D was set to $k = 2(n_f) - 1$, the number of distance variables $L$ was set to $L = 20$ and the number of dimensions is given by $D = k + L$.
 
 Here termination criteria was set to the maximum of iterations, with value of \textit{300} interactions, which leads to a number of functions evaluations of \textit{60200} in the case of the 2-objective problems, while for the 3-objective problems, the number of evaluations lead was \textit{63210}.
 
@@ -40,18 +42,7 @@ The hyper-volume (HV) indicator~\cite{zitzler1998multiobjective} was used for ev
 
 
 
-The following combinations of algorithms (MOEA/D-DE or MOEA/D) were tested:
-
-\begin{itemize}
-	\item MOEA/D-DE
-	\item MOEA/D-DE with Bet-and-Run strategy
-	\item MOEA/D-DE with ONRA
-	\item MOEA/D-DE with Bet-and-Run strategy and ONRA
-	\item MOEA/D
-	\item MOEA/D with Bet-and-Run strategy
-	\item MOEA/D with ONRA
-	\item MOEA/D with Bet-and-Run strategy and ONRA
-\end{itemize}
+The following combinations of algorithms (MOEA/D-DE or MOEA/D) were tested: \textit{MOEA/D-DE}, \textit{MOEA/D-DE with Bet-and-Run strategy}, \textit{MOEA/D-DE with ONRA}, \textit{MOEA/D-DE with Bet-and-Run strategy and ONRA}, \textit{MOEA/D}, \textit{MOEA/D with Bet-and-Run strategy}, \textit{MOEA/D with ONRA},  \textit{MOEA/D with Bet-and-Run strategy and ONRA}.
 
 For each combinations above,, the search was repeated 30 times, and the Kruskal-Wallis XXX box-plot XXXX.
 %

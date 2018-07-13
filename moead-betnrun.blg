@@ -8,45 +8,45 @@ Repeated entry---line 310 of file bib.bib
  :                                    ,
 I'm skipping whatever remains of this entry
 Warning--can't use both volume and number fields in yu2018simulated
-You've used 16 entries,
+You've used 17 entries,
             2850 wiz_defined-function locations,
-            699 strings with 7696 characters,
-and the built_in function-call counts, 10130 in all, are:
-= -- 885
-> -- 277
-< -- 23
-+ -- 117
-- -- 98
-* -- 625
-:= -- 1244
-add.period$ -- 28
-call.type$ -- 16
-change.case$ -- 111
+            706 strings with 7936 characters,
+and the built_in function-call counts, 10900 in all, are:
+= -- 947
+> -- 309
+< -- 25
++ -- 131
+- -- 110
+* -- 680
+:= -- 1339
+add.period$ -- 29
+call.type$ -- 17
+change.case$ -- 120
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 899
-empty$ -- 906
-format.name$ -- 113
-if$ -- 2261
+cite$ -- 18
+duplicate$ -- 963
+empty$ -- 965
+format.name$ -- 126
+if$ -- 2425
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 169
-newline$ -- 54
-num.names$ -- 32
-pop$ -- 314
+int.to.str$ -- 17
+missing$ -- 183
+newline$ -- 57
+num.names$ -- 34
+pop$ -- 337
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 89
 quote$ -- 0
-skip$ -- 314
+skip$ -- 335
 stack$ -- 0
-substring$ -- 637
-swap$ -- 524
-text.length$ -- 23
+substring$ -- 683
+swap$ -- 569
+text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 64
+type$ -- 68
 warning$ -- 1
-while$ -- 91
-width$ -- 18
-write$ -- 171
+while$ -- 97
+width$ -- 19
+write$ -- 181
 (There was 1 error message)

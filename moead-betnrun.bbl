@@ -30,6 +30,11 @@ Gomes, C.P., Selman, B., Crato, N., Kautz, H.: Heavy-tailed phenomena in
   satisfiability and constraint satisfaction problems. Journal of automated
   reasoning  \textbf{24}(1-2),  67--100 (2000)
 
+\bibitem{huband2006review}
+Huband, S., Hingston, P., Barone, L., While, L.: A review of multiobjective
+  test problems and a scalable test problem toolkit. IEEE Transactions on
+  Evolutionary Computation  \textbf{10}(5),  477--506 (2006)
+
 \bibitem{ishibuchi2018specify}
 Ishibuchi, H., Imada, R., Setoguchi, Y., Nojima, Y.: How to specify a reference
   point in hypervolume calculation for fair performance comparison.
@@ -72,14 +77,15 @@ Zhou, A., Zhang, Q.: Are all the subproblems equally important? resource
   allocation in decomposition-based multiobjective evolutionary algorithms.
   IEEE Transactions on Evolutionary Computation  \textbf{20}(1),  52--64 (2016)
 
-\bibitem{zitzler2000comparison}
-Zitzler, E., Deb, K., Thiele, L.: Comparison of multiobjective evolutionary
-  algorithms: Empirical results. Evolutionary computation  \textbf{8}(2),
-  173--195 (2000)
-
 \bibitem{zitzler1998multiobjective}
 Zitzler, E., Thiele, L.: Multiobjective optimization using evolutionary
   algorithms—a comparative case study. In: International conference on
   parallel problem solving from nature. pp. 292--301. Springer (1998)
+
+\bibitem{zitzler2003performance}
+Zitzler, E., Thiele, L., Laumanns, M., Fonseca, C.M., Da~Fonseca, V.G.:
+  Performance assessment of multiobjective optimizers: An analysis and review.
+  IEEE Transactions on evolutionary computation  \textbf{7}(2),  117--132
+  (2003)
 
 \end{thebibliography}
