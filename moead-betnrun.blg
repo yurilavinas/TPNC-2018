@@ -7,46 +7,54 @@ Repeated entry---line 310 of file bib.bib
  : @inproceedings{friedrich2017generic
  :                                    ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 396 of file bib.bib
+ : @article{trivedi2017survey
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 537 of file bib.bib
+ : @inproceedings{zhang2009performance
+ :                                    ,
+I'm skipping whatever remains of this entry
 Warning--can't use both volume and number fields in yu2018simulated
-You've used 17 entries,
+You've used 32 entries,
             2850 wiz_defined-function locations,
-            706 strings with 7936 characters,
-and the built_in function-call counts, 10900 in all, are:
-= -- 947
-> -- 309
-< -- 25
-+ -- 131
-- -- 110
-* -- 680
-:= -- 1339
-add.period$ -- 29
-call.type$ -- 17
-change.case$ -- 120
+            789 strings with 11145 characters,
+and the built_in function-call counts, 20361 in all, are:
+= -- 1754
+> -- 594
+< -- 47
++ -- 252
+- -- 212
+* -- 1284
+:= -- 2509
+add.period$ -- 54
+call.type$ -- 32
+change.case$ -- 228
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 963
-empty$ -- 965
-format.name$ -- 126
-if$ -- 2425
+cite$ -- 33
+duplicate$ -- 1801
+empty$ -- 1806
+format.name$ -- 241
+if$ -- 4516
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 183
-newline$ -- 57
-num.names$ -- 34
-pop$ -- 337
+int.to.str$ -- 32
+missing$ -- 346
+newline$ -- 102
+num.names$ -- 64
+pop$ -- 630
 preamble$ -- 1
-purify$ -- 89
+purify$ -- 170
 quote$ -- 0
-skip$ -- 335
+skip$ -- 608
 stack$ -- 0
-substring$ -- 683
-swap$ -- 569
-text.length$ -- 25
+substring$ -- 1253
+swap$ -- 1064
+text.length$ -- 47
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 68
+type$ -- 128
 warning$ -- 1
-while$ -- 97
-width$ -- 19
-write$ -- 181
-(There was 1 error message)
+while$ -- 181
+width$ -- 34
+write$ -- 337
+(There were 3 error messages)

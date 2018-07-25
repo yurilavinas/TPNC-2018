@@ -1,22 +1,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Introduction}\label{intro}
+\section{Introduction}
 
-A Multiobjective Optimization Problem (MOP)  are box-constrained problems that have $m$ multiple objective functions that must be optimized simultaneously:
+A Multi-objective Optimization Problem (MOP)  is box-constrained problems that have $m$ multiple objective functions that must be optimized simultaneously:
 
 \begin{align}\label{min_problem}
 min f(x) = (f_1(x), f_2(x), ..., f_{n_f}(x)), \text{ subject to $x$ in $\Omega$},
 \end{align}
 
-where ${n_f}$ is the number of objective functions, $x \in \mathbb{R}^{n_v}$, the decision vector, represents a candidate solution with ${n_v}$ variables, $f: \mathbb{R}^{n_v} \rightarrow \mathbb{R}^{n_v}$ is a vector of objective functions and $\Omega$ is the feasible decision space, such that:
+where ${n_f}$ is the number of objective functions, $x \in \mathbb{R}^{n_v}$, the decision vector, represents a candidate solution with ${n_v}$ variables, $f: \mathbb{R}^{n_v} \rightarrow \mathbb{R}^{n_v}$ is a vector of objective functions and $\Omega$ is the feasible decision space. $\Omega$ is defined as:
 
 \begin{align}
 	\Omega =\{x \text{ in } \mathbb{R}^{n_v} | g_i(x) \leq 0 \text{ } \forall_i \text{ and } h_i(x) = 0 \text{ } \forall_j \},
 \end{align}
 
-Objectives often conflict with each other, therefore, no point in $\Omega$ minimizes all the objectives at the same time. Consequently, the goal of MOP solvers is to find the best trade-off that balances the different objectives in an optimal way.
+Objectives often conflict with each other therefore no point in $\Omega$ minimizes all the objectives at the same time. Consequently, the goal of MOP solvers is to find the best trade-off that balances the different objectives in an optimal way.
 
 
-Given two feasible solutions $u, v$ in $\Omega$, $u$  Pareto-dominates $v$, denoted by $f(y) \succ f(v)$, if and only if $f_k(u) \leq f_k(v), \forall_k \in \{1,..., n_f\}$ and $ f(u) \neq f(x)$. A solution $x^* \in \Omega$ is considered Pareto-Optimal if there exists no other solution $y \in \Omega$ such that $f(y) \succ f(x^*)$, i.e., if $x^*$ is non-dominated in the feasible decision space. A point is called non-dominated if no other point dominates it. That is, no single solution provides a better trade-off in all objectives.
+Given two feasible solutions $u, v$ in $\Omega$, $u$  Pareto-dominates $v$, denoted by $f(u) \prec f(v)$, if and only if $f_k(u) \leq f_k(v), \forall_k \in \{1,..., n_f\}$ and $ f(u) \neq f(x)$. A solution $x^* \in \Omega$ is considered Pareto-Optimal if there exists no other solution $y \in \Omega$ such that $f(y) \succ f(x^*)$, i.e., if $x^*$ is non-dominated in the feasible decision space. A point is called non-dominated if no other point dominates it. That is, no single solution provides a better trade-off in all objectives.
 
 The set of all Pareto-optimal solutions is known as the Pareto-Optimal set (PS), while the image of this set is referred to as the Pareto-optimal front (PF).\\
 
@@ -27,3 +27,29 @@ The set of all Pareto-optimal solutions is known as the Pareto-Optimal set (PS),
 \begin{equation}
 	PF = {f(x^*) | x^* \in PS }.
 \end{equation}
+
+
+Multi-objective evolutionary algorithms (MOEAs) have been accepted as a basic tool for approximating the PF of a MOP in a single run~\cite{zhou2011multiobjective}.Over the last two decades, many different search techniques were proposed for improving the effectiveness of multi-objective algorithms. Among them, three are the major paradigms: Pareto domination-based approaches~\cite{deb2002fast},~\cite{zitzler2001spea2}, the indicator-based approaches~\cite{beume2007sms},~\cite{zitzler2004indicator}, and the decomposition-based approaches~\cite{li2009multiobjective},~\cite{zhang2007moea}. 
+
+MOEA/D~\cite{zhang2007moea} represents a class of population-based meta-heuristics for solving Multi Objective Problems~\cite{trivedi2017survey}. In this search paradigm, the original multi-objective problem is decomposed into simpler, single-objective sub-problems by means of scalarizations.
+ However, it may waste functions evaluations searching in directions that do not present Pareto-optimal solutions~\cite{bezerra2015comparing}. 
+ 
+ To reduce this computational cost, the allocation of resources may be better distributed among different sub-problems according to their difficulties. One way to address this problem is to adjust the behavior of the algorithm in an on-line manner to suit the problem in question~\cite{hinterding1997adaptation},~\cite{de2007parameter},~\cite{meyer2007self},~\cite{zhang2009performance},~\cite{kramer2010evolutionary},~\cite{zhang2012survey}. All algorithmic components can be tunned adaptively and often feedback information is needed for these adaptation strategies. One variation that aimed to improve this drawback is to use a dynamic/generalized resource allocation (D/G-RA) strategy which allocates resources given the difficulties of the sub-problems studied in MOEA/D-DRA by Zhang~\cite{zhang2009performance}  and  in MOEA/D-GRA Zhou et. al~\cite{zhou2016all}.
+ 
+Another approach that could help reducing the amount of functions evaluations is to use restart strategies. That might help if the algorithm is wasting evaluations searching in directions that are not promising, the algorithm is restarted and a new initial set of solutions is sampled. It is well known that the initial set of solutions often influences the quality outcome, but by simpling re-sample the set of solutions might not direct the algorithm to a more promising region of the search space. Therefore one more elaborated strategy that considers different initial set of solutions may positively address the final quality of the results.
+ 
+One strategy that consideres different initial set of solutions is the Bet-and-Run strategy~\cite{fischetti2014exploiting}. It extends two typical uses for an algorithm with budget \textit{t} are to use all of the budget for a single run of the algorithm or to make a number of \textit{k} runs of the algorithm and run each with \textit{t/k}. In this strategy, \textit{k} independent runs are all executed with a fraction of the total budget and the best among them continues with the remaining of the total budget.
+ 
+From a theoretical point of view, the way that this strategy relates with initialization can be beneficial even on easy functions and be an effective countermeasure against problems with promising but deceptive regions. However, this benefit come with a cost which is the introduction of two additional control parameters, that are non-trivial to be chosen~\cite{lissovoi2017theoretical}.
+
+The main contributions of this paper can be summarized as follows:
+
+\begin{itemize}
+	\item A careful examination of the proper settings of the hyper-parameters of the Bet-and-Run strategy when combined with the two variants (MOEA/D~\cite{zhang2007moea} and MOEA/D-DE~\cite{li2009multiobjective}) of MOEA/D with Bet-and-Run strategy which realize the best performance of the MOEAs on the 10 CEC2009 competition functions~\cite{zhang2008multiobjective}.
+	\item Proposition an alternative way of choosing the MOEA/D variants hyper-parameters by randomly selecting them.		
+	\item An extensive analysis of the performance of using the hyper-volume indicator~\cite{zitzler1998multiobjective}, the epsilon indicator~\cite{zitzler2003performance}, and the IGD indicator~\cite{zitzler2003performance} on the 7-DTLZ~\cite{deb2005scalable} and the 9-WFG~\cite{huband2006review}. 
+\end{itemize}
+
+
+ 
+ 

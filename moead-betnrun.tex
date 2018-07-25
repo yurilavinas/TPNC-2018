@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{amsmath}
+\renewcommand{\labelitemi}{$\bullet$}
 
 \usepackage[ruled]{algorithm2e}
 % Used for displaying a sample figure. If possible, figure files should
@@ -42,9 +43,7 @@ ABC Institute, Rupert-Karls-University Heidelberg, Heidelberg, Germany\\
 \maketitle              % typeset the header of the contribution
 %
 \begin{abstract}
-Bet-and-run strategies have been shown, both experimentally and theoretically, to be beneficial on single objective problems. Given this success and the fact that they do not take any problem knowledge into account and are not tailored to the optimization algorithms, here it is proposed an integration a bet-and-run strategy into the Multiobjective Evolutionary Algorithm based on Decomposition framework, (MOEA/D). 
-
-MOEA/D represent a class of population-based metaheuristics for the solution of multicriteria optimizarion problems. It decomposes a multiobjective optimization problem into a set of scalar objective subproblems and solve this set in a collaborative way. 
+Bet-and-run strategies have been shown, both experimentally and theoretically, to be beneficial on single objective problems. Given this success and the fact that they do not take any problem knowledge into account, here we propose an integration of bet-and-run strategy into the multi-objective evolutionary algorithm based on Decomposition framework, (MOEA/D). We conduct a systematic analysis that compares two variations of MOEA/D (the classical MOEA/D and MOEA/D-DE) with and without bet-and-run strategy.  Each MOEA is evaluates under 7-DTLZ and 9-WFG benchmark functions and the results indicates that XXX.
 
 \end{abstract}
 %
@@ -54,8 +53,8 @@ MOEA/D represent a class of population-based metaheuristics for the solution of 
 \input{2_moead.tex} 
 \input{3_betnrun.tex}% arrumar o where...
 \input{4_moeadbetnrun.tex}
-\input{5_experiment.tex}
-\input{6_results.tex}
+\input{5_tuning.tex}
+\input{6_comparison.tex}
 \input{7_conclusion.tex}
 
 \bibliographystyle{splncs04}

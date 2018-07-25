@@ -1,0 +1,21 @@
+\section{Experimental Setting}
+
+
+\subsection{Bet-and-Run hyper-parameters study}
+
+For automatically fine tuning the Bet-and-Run hyper-parameters, we employ the Iterated Racing Procedure (available in the irace R package)~\cite{bezerra2016automatic}. Ten unconstrained test problems from the CEC2009 competition, UF benchmarck functions,~\cite{zhang2008multiobjective} are used, with dimensions ranging from 20 to 60. Dimensions 30, 40 and 50 were reserved for testing while all the others were used for training effort. To evaluate a candidate returned by a configuration we used the The hyper-volume (HV) indicator~\cite{zitzler1998multiobjective}.
+
+Before calculating the HV value, the objective function vector $f(x)$ of each $x \in DS$ was scaled between 0 and 1, as suggested in~\cite{ishibuchi2018specify}. Therefore the reference point used, based on the work of Ishibuchi et. at was defined given the value $H$:
+\begin{itemize}
+	\item For 2-objectives: $H = 199$, which leads to a reference point of $(1+1/H, 1+1/H) = (1.005, 1.005)$, meaning $n_f = 200$.
+	\item For 3-objectives: $H = 99$, which leads to a reference point of $(1+1/H, 1+1/H) = (1.010, 1.010)$, meaning $n_f = 210$.
+\end{itemize}
+
+The tuning budget was set to 20,000 runs for this procedure, while the number of interactions was defined to \textit{300}. The possible configurations are composed from the following choices:
+\begin{itemize}
+	\item The number of  \textit{k} runs in Phase 1 perform: in the interval of [2,20].
+	\item The number of interactions for each of the runs in Phase 1: in the interval of [2,10].
+\end{itemize}
+
+\subsection{results}
+

@@ -1,13 +1,14 @@
 
-\section{MOEA/D}\label{sec:background} 
+\section{MOEA/D}
 
-\begin{figure*}[!t]\label{decomp-example}
+\begin{figure*}[!t]
 	\centering
 	\includegraphics[width=\textwidth]{images/decomp2.png}
-	\caption{Decomposition  -  2 and 3 objectives - Figure from \cite{chugh2017handling} }
+	\caption{Decomposition  -  2 and 3 objectives - Figure from \cite{chugh2017handling}.}
+	\label{decomp2-example}
 \end{figure*}.
 
-Here, MOEA/D~\cite{zhang2007moea} is briefly explained. MOEA/D represents a class of population-based meta-heuristics for solving Multi Objective Problems (MOPs). It is based on decomposition, which is one kind of scalarizing function, where one multi-objective problem becomes various single-objective sub-problem. That is, MOEA/D decomposes an MOP with $n_f$ objectives, as defined in equation~\ref{min_problem}, into $N$  sub-problems using a set of uniformly distributed weight vectors. To define the sub-problem a weight vector is used as a decomposition strategy to  define the sub-problems.  All these $N$ sub-problems are expected to represent a good approximation to the PF, as it is shown in Figure~\ref{decomp-example}.
+Here, MOEA/D~\cite{zhang2007moea} is briefly explained and its procedure is shown in algorithm~\ref{algo-moead}. MOEA/D decomposes an MOP with $n_f$ objectives, as defined in equation~\ref{min_problem}, into $N$  sub-problems using a set of uniformly distributed weight vectors. To define the sub-problem a weight vector is used as a decomposition strategy to  define the sub-problems.  All these $N$ sub-problems are expected to represent a good approximation to the PF, as it is shown in Figure~\ref{decomp2-example}.
 
 MOEA/D solves these subproblems simultaneously by evolving a set of solutions in a single run by using a aggregation function. This function allied with the weight vectors need to guarantee that a optimal solution to a sub-problem is Pareto-optimal for the MOP and also need to guarantee that the solutions are well distributed in the space of objectives. Therefore, the set of solutions may provide a fair approximation of the Pareto Front.
 
@@ -45,6 +46,7 @@ To compare the solutions or to generate a new one, the algorithm utilizes a neig
 	%		
 	%		
 	\caption{General procedure of MOEA/D framework}
+	\label{algo-moead}
 \end{algorithm}\DecMargin{1em}
 
 

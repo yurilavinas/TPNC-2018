@@ -3,6 +3,22 @@
 \providecommand{\urlprefix}{URL }
 \providecommand{\doi}[1]{https://doi.org/#1}
 
+\bibitem{beume2007sms}
+Beume, N., Naujoks, B., Emmerich, M.: Sms-emoa: Multiobjective selection based
+  on dominated hypervolume. European Journal of Operational Research
+  \textbf{181}(3),  1653--1669 (2007)
+
+\bibitem{bezerra2015comparing}
+Bezerra, L.C., L{\'o}pez-Ib{\'a}{\~n}ez, M., St{\"u}tzle, T.: Comparing
+  decomposition-based and automatically component-wise designed multi-objective
+  evolutionary algorithms. In: International Conference on Evolutionary
+  Multi-Criterion Optimization. pp. 396--410. Springer (2015)
+
+\bibitem{bezerra2016automatic}
+Bezerra, L.C., L{\'o}pez-Ib{\'a}nez, M., St{\"u}tzle, T.: Automatic
+  component-wise design of multiobjective evolutionary algorithms. IEEE
+  Transactions on Evolutionary Computation  \textbf{20}(3),  403--417 (2016)
+
 \bibitem{brockhoff2015benchmarking}
 Brockhoff, D., Tran, T.D., Hansen, N.: Benchmarking numerical multiobjective
   optimizers revisited. In: Proceedings of the 2015 Annual Conference on
@@ -11,6 +27,15 @@ Brockhoff, D., Tran, T.D., Hansen, N.: Benchmarking numerical multiobjective
 \bibitem{chugh2017handling}
 Chugh, T.: Handling expensive multiobjective optimization problems with
   evolutionary algorithms. Jyv{\"a}skyl{\"a} studies in computing 263.  (2017)
+
+\bibitem{de2007parameter}
+De~Jong, K.: Parameter setting in eas: a 30 year perspective. In: Parameter
+  setting in evolutionary algorithms, pp. 1--18. Springer (2007)
+
+\bibitem{deb2002fast}
+Deb, K., Pratap, A., Agarwal, S., Meyarivan, T.: A fast and elitist
+  multiobjective genetic algorithm: Nsga-ii. IEEE transactions on evolutionary
+  computation  \textbf{6}(2),  182--197 (2002)
 
 \bibitem{deb2005scalable}
 Deb, K., Thiele, L., Laumanns, M., Zitzler, E.: Scalable test problems for
@@ -30,6 +55,11 @@ Gomes, C.P., Selman, B., Crato, N., Kautz, H.: Heavy-tailed phenomena in
   satisfiability and constraint satisfaction problems. Journal of automated
   reasoning  \textbf{24}(1-2),  67--100 (2000)
 
+\bibitem{hinterding1997adaptation}
+Hinterding, R., Michalewicz, Z., Eiben, A.E.: Adaptation in evolutionary
+  computation: A survey. In: Evolutionary Computation, 1997., IEEE
+  International Conference on. pp. 65--69. IEEE (1997)
+
 \bibitem{huband2006review}
 Huband, S., Hingston, P., Barone, L., While, L.: A review of multiobjective
   test problems and a scalable test problem toolkit. IEEE Transactions on
@@ -46,6 +76,10 @@ Kanahara, K., Katayama, K., Okano, T., Kulla, E., Oda, T., Nishihara, N.: A
   problem. In: Conference on Complex, Intelligent, and Software Intensive
   Systems. pp. 670--680. Springer (2018)
 
+\bibitem{kramer2010evolutionary}
+Kramer, O.: Evolutionary self-adaptation: a survey of operators and strategy
+  parameters. Evolutionary Intelligence  \textbf{3}(2),  51--65 (2010)
+
 \bibitem{li2009multiobjective}
 Li, H., Zhang, Q.: Multiobjective optimization problems with complicated pareto
   sets, moea/d and nsga-ii. IEEE Transactions on evolutionary computation
@@ -56,10 +90,19 @@ Lissovoi, A., Sudholt, D., Wagner, M., Zarges, C.: Theoretical results on
   bet-and-run as an initialisation strategy. In: Proceedings of the Genetic and
   Evolutionary Computation Conference. pp. 857--864. ACM (2017)
 
+\bibitem{meyer2007self}
+Meyer-Nieberg, S., Beyer, H.G.: Self-adaptation in evolutionary algorithms. In:
+  Parameter setting in evolutionary algorithms, pp. 47--75. Springer (2007)
+
 \bibitem{tanabe2018analysis}
 Tanabe, R., Ishibuchi, H.: An analysis of control parameters of moea/d under
   two different optimization scenarios. Applied Soft Computing  \textbf{70},
   22--40 (2018)
+
+\bibitem{trivedi2017survey}
+Trivedi, A., Srinivasan, D., Sanyal, K., Ghosh, A.: A survey of multiobjective
+  evolutionary algorithms based on decomposition. IEEE Transactions on
+  Evolutionary Computation  \textbf{21}(3),  440--462 (2017)
 
 \bibitem{yu2018simulated}
 Yu, V., Iswari, T., Normasari, N., Asih, A., Ting, H.: Simulated annealing with
@@ -67,15 +110,47 @@ Yu, V., Iswari, T., Normasari, N., Asih, A., Ting, H.: Simulated annealing with
   Series: Materials Science and Engineering. vol.~337, p. 012007. IOP
   Publishing (2018)
 
+\bibitem{zhang2012survey}
+Zhang, J., Chen, W.N., Zhan, Z.H., Yu, W.J., Li, Y.L., Chen, N., Zhou, Q.: A
+  survey on algorithm adaptation in evolutionary computation. Frontiers of
+  Electrical and Electronic Engineering  \textbf{7}(1),  16--31 (2012)
+
 \bibitem{zhang2007moea}
 Zhang, Q., Li, H.: Moea/d: A multiobjective evolutionary algorithm based on
   decomposition. IEEE Transactions on evolutionary computation  \textbf{11}(6),
    712--731 (2007)
 
+\bibitem{zhang2009performance}
+Zhang, Q., Liu, W., Li, H.: The performance of a new version of moea/d on cec09
+  unconstrained mop test instances. In: Evolutionary Computation, 2009. CEC'09.
+  IEEE Congress on. pp. 203--208. IEEE (2009)
+
+\bibitem{zhang2008multiobjective}
+Zhang, Q., Zhou, A., Zhao, S., Suganthan, P.N., Liu, W., Tiwari, S.:
+  Multiobjective optimization test instances for the cec 2009 special session
+  and competition. University of Essex, Colchester, UK and Nanyang
+  technological University, Singapore, special session on performance
+  assessment of multi-objective optimization algorithms, technical report
+  \textbf{264} (2008)
+
+\bibitem{zhou2011multiobjective}
+Zhou, A., Qu, B.Y., Li, H., Zhao, S.Z., Suganthan, P.N., Zhang, Q.:
+  Multiobjective evolutionary algorithms: A survey of the state of the art.
+  Swarm and Evolutionary Computation  \textbf{1}(1),  32--49 (2011)
+
 \bibitem{zhou2016all}
 Zhou, A., Zhang, Q.: Are all the subproblems equally important? resource
   allocation in decomposition-based multiobjective evolutionary algorithms.
   IEEE Transactions on Evolutionary Computation  \textbf{20}(1),  52--64 (2016)
+
+\bibitem{zitzler2004indicator}
+Zitzler, E., K{\"u}nzli, S.: Indicator-based selection in multiobjective
+  search. In: International Conference on Parallel Problem Solving from Nature.
+  pp. 832--842. Springer (2004)
+
+\bibitem{zitzler2001spea2}
+Zitzler, E., Laumanns, M., Thiele, L.: Spea2: Improving the strength pareto
+  evolutionary algorithm. TIK-report  \textbf{103} (2001)
 
 \bibitem{zitzler1998multiobjective}
 Zitzler, E., Thiele, L.: Multiobjective optimization using evolutionary
